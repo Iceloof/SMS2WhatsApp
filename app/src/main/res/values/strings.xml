@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SMS2WhatsApp</string>
+    <string name="phone_format">+12345678</string>
+    <string name="check_permissions">Check Permissions</string>
+    <string name="enter_phone_number">+1234567890</string>
+    <string name="save">Save</string>
+    <string name="logo_desc">logo</string>
+    <string name="copyright">© 2024 Iceloof</string>
+    <string name="permissions_required">Permissions Required:\n\nTo ensure optimal functionality, this app requires the following permissions:\n- SMS: To receive and read messages.\n- Accessibility Services: To allow automatically send message with WhatsApp.\n- Device Admin: To allow auto lock and unlock.\n\nAdditionally, please disable any screen lock security methods to allow seamless access.</string>
+    <string name="sms_2_whatsapp">SMS 2 WhatsApp</string>
+</resources>

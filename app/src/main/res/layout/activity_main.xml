@@ -1,0 +1,85 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/logo_desc"
+        android:padding="16dp"
+        android:src="@drawable/landscapelogo" />
+
+    <TextView
+        android:id="@+id/appTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="16sp"
+        android:text="@string/sms_2_whatsapp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/phone_format"
+        android:hint="@string/enter_phone_number"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColor="@color/colorPrimaryText"
+        tools:ignore="VisualLintTextFieldSize"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/save"
+            android:textColor="@color/colorBackground" />
+
+        <Button
+            android:id="@+id/checkPermissionsButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="@string/check_permissions"
+            android:textColor="@color/colorPrimaryText" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/noteTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:text="@string/permissions_required" />
+
+    <TextView
+        android:id="@+id/copyrightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:text="@string/copyright" />
+</LinearLayout>
